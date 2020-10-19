@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hóa Đơn</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <script src="../js/vanlang.js"></script>
+</head>
+<body class="body-tkb">
+    <div class="hd-home" id="top"> 
+        <p class="bot-hd">
+            <img src="../images/US.gif" alt="US">
+            <img src="../images/VI.gif" alt="VI">
+            <span class="a-login">Chào bạn Khánh Hà (187IT06847) Xem Thông Báo  </span>
+            <a class="a-login" href="../pages/login.html">Đăng Nhập</a>
+            <form class="font">
+                <select name="font" id="font">
+                    <option value="---font---">---font---</option>
+                    <option value="fontunicode" selected>Font Unicode</option>
+                    <option value="fontabc">Font ABC</option>
+                    <option value="fontvni">Font VNI</option>
+                    <option value="telex">Telex Không Dấu</option>
+                </select>
+            </form>
+        </p>
+     </div>
+     <div class="nav-home">
+        <ul>
+            <li><a href="../Home.html">Trang Chủ</a></li>
+            <li>
+                <div class="drop-down">
+                    <button class="drop-down-btn">Hồ Sơ Cá Nhân</button>
+                    <div class="drop-down-content">
+                        <a href="./tkb.html">Thời Khóa Biểu</a>
+                        <a href="./profile.html">Điểm Môn Học</a>
+                        <a href="./profile.html">Sửa Trang Cá Nhân</a>
+                        <a href="./profile.html">Sửa Lý Lịch</a>
+                        <a href="./hoadon.html">Hóa Đơn Điện Tử</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="drop-down">
+                    <button class="drop-down-btn">Chương Trình Đào Tạo</button>
+                    <div class="drop-down-content">
+                        <a href="./tkb.html">Chương Trình ĐT</a>
+                        <a href="./profile.html">Đánh Giá Rèn Luyện</a>
+                        <a href="./profile.html">Góp Ý Kiến</a>
+                        <a href="./profile.html">Đánh Giá Giảng Dạy</a>
+                        <a href="./hoadon.html">Giới Thiệu Trường</a>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+     </div>
+     <div class="section-thongbao">
+        <h4><img src="../images/icon-move-top.gif" alt="icon-move-top">Danh sách hóa đơn</h4>
+        <div class="right"><img src="../images/icon_lich.png" alt="icon_lich"></div>
+        <div class="right padding">
+            <label for="">Chọn học kỳ xem TKB </label>
+            <select name="slthk" >
+                <option value="Học Kỳ 1-năm 2019-2020">Học Kỳ 1 - Năm 2019-2020</option>
+                <option value="Học Kỳ 2 - Năm 2019-2020">Học Kỳ 1 - Năm 2019-2020</option>
+                <option value="Học Kỳ 1 - Năm 2020-2021" selected>Học Kỳ 1 - Năm 2020-2021</option>
+            </select><br>
+            <select name="lsttuan" id="slt">
+                <option value="TKB theo tuần" selected>TKB theo tuần</option>
+                <option value="TKB Toàn Trường">TKB Toàn Trường"</option>
+                <option value="TKB học kỳ cá nhân">TKB học kỳ cá nhân</option>
+            </select>
+            <select name="sltfor" id="slt">
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+                <option value="từ....">Tuần 5 [ Từ 28/09/2020 -- 04/10/2020 ]</option>
+
+            </select>
+            <button>In TKB</button>
+            <p>( Lưu ý: tuần 1 tương ứng với tuần 1 của học kỳ, bắt đầu từ ngày 31/08/2020)</p>
+            <p>( Dữ liệu được cập nhật vào lúc: 13:28 Ngày: 18/10/2020)  </p>
+        </div>
+        <div class="tkb">
+            
+            <p class="p1">Mã Số <span class="green">187IT06847</span> Họ Tên <span class="green" id="temp">Hà Dương Khánh</span> - Ngày <sinh:span class="green">17/10/2000</sinh:span> - Lớp: <span class="green"></span> - Ngành: <span class="green">Công nghệ thông tin</span> - Khoa: <span class="green">Khoa Công nghệ thông tin</span>  </p>
+            
+            <table class="tb-tkb">
+                <tr class="row-1">
+                    <td></td>
+                    <td>THỨ HAI</td>
+                    <td>THỨ BA</td>
+                    <td>THỨ TƯ</td>
+                    <td>THỨ NĂM</td>
+                    <td>THỨ SÁU</td>
+                    <td>THỨ BẢY</td>
+                    <td>CHỦ NHẬT</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 1</td>
+                    <td class="green b" rowspan="3" ">Pháp luật đại cương <br>
+                        Phòng: CS3.A.11.04
+                        <div  class="tb-hidden box-1" >
+                            <table >
+                                <tr>
+                                    <th colspan="2">Pháp Luật Đại Cương</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã Môn Học : </td>
+                                    <td>DLP00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Tên Môn Học : </td>
+                                    <td>Pháp Luật Đại Cương</td>
+                                </tr>
+                                <tr>
+                                    <td>Phòng Học : </td>
+                                    <td>C301</td>
+                                </tr>
+                                <tr>
+                                    <td>Thứ : </td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết Bắt Đầu : </td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Số Tiết : </td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Giảng Viên : </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lớp : </td>
+                                    <td>K24-IT10</td>
+                                </tr>
+                            </table>
+                        </div></td>
+
+                    <td></td>
+                    <td class="green b" rowspan="3">	
+                        Hệ cơ sở dữ liệu nâng cao
+                        Phòng: CS3.A.12.07
+                        <div class="tb-hidden box-2">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Pháp Luật Đại Cương</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã Môn Học : </td>
+                                    <td>DLP00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Tên Môn Học : </td>
+                                    <td>Pháp Luật Đại Cương</td>
+                                </tr>
+                                <tr>
+                                    <td>Phòng Học : </td>
+                                    <td>C301</td>
+                                </tr>
+                                <tr>
+                                    <td>Thứ : </td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết Bắt Đầu : </td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Số Tiết : </td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Giảng Viên : </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lớp : </td>
+                                    <td>K24-IT10</td>
+                                </tr>
+                            </table>
+                        </div></td>
+                    <td class="green b" rowspan="3">Hệ cơ sở dữ liệu nâng cao
+                        Phòng: CS3.A.04.06
+                        <div class="tb-hidden box-3">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Pháp Luật Đại Cương</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã Môn Học : </td>
+                                    <td>DLP00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Tên Môn Học : </td>
+                                    <td>Pháp Luật Đại Cương</td>
+                                </tr>
+                                <tr>
+                                    <td>Phòng Học : </td>
+                                    <td>C301</td>
+                                </tr>
+                                <tr>
+                                    <td>Thứ : </td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết Bắt Đầu : </td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Số Tiết : </td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Giảng Viên : </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lớp : </td>
+                                    <td>K24-IT10</td>
+                                </tr>
+                            </table>
+                        </div></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 1</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 2</td>
+                    
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 3</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 4</td>
+                    <td class="green b" rowspan="3">Lập trình Web nâng cao
+                        Phòng: CS3.A.11.04<div class="tb-hidden box-4">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Pháp Luật Đại Cương</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã Môn Học : </td>
+                                    <td>DLP00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Tên Môn Học : </td>
+                                    <td>Pháp Luật Đại Cương</td>
+                                </tr>
+                                <tr>
+                                    <td>Phòng Học : </td>
+                                    <td>C301</td>
+                                </tr>
+                                <tr>
+                                    <td>Thứ : </td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết Bắt Đầu : </td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Số Tiết : </td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Giảng Viên : </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lớp : </td>
+                                    <td>K24-IT10</td>
+                                </tr>
+                            </table>
+                        </div></td>
+                    <td class="green b" rowspan="3">Lập trình ứng dụng Java
+                        Phòng: CS3.A.11.04<div class="tb-hidden box-5">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Pháp Luật Đại Cương</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã Môn Học : </td>
+                                    <td>DLP00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Tên Môn Học : </td>
+                                    <td>Pháp Luật Đại Cương</td>
+                                </tr>
+                                <tr>
+                                    <td>Phòng Học : </td>
+                                    <td>C301</td>
+                                </tr>
+                                <tr>
+                                    <td>Thứ : </td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết Bắt Đầu : </td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Số Tiết : </td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Giảng Viên : </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lớp : </td>
+                                    <td>K24-IT10</td>
+                                </tr>
+                            </table>
+                        </div></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 4</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 5</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 6</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 7</td>
+                    <td></td>
+                    <td></td>
+                    <td class="green b" rowspan="3">Nhập môn Công nghệ phần mềm
+                        Phòng: CS3.A.08.02<div class="tb-hidden box-6">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Pháp Luật Đại Cương</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã Môn Học : </td>
+                                    <td>DLP00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Tên Môn Học : </td>
+                                    <td>Pháp Luật Đại Cương</td>
+                                </tr>
+                                <tr>
+                                    <td>Phòng Học : </td>
+                                    <td>C301</td>
+                                </tr>
+                                <tr>
+                                    <td>Thứ : </td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết Bắt Đầu : </td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Số Tiết : </td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Giảng Viên : </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lớp : </td>
+                                    <td>K24-IT10</td>
+                                </tr>
+                            </table>
+                        </div></td>
+                    <td></td>
+                    <td class="green b" rowspan="3">	
+                        Lập trình Web nâng cao
+                        Phòng: CS3.A.12.07
+                        <div class="tb-hidden box-7">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Pháp Luật Đại Cương</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã Môn Học : </td>
+                                    <td>DLP00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Tên Môn Học : </td>
+                                    <td>Pháp Luật Đại Cương</td>
+                                </tr>
+                                <tr>
+                                    <td>Phòng Học : </td>
+                                    <td>C301</td>
+                                </tr>
+                                <tr>
+                                    <td>Thứ : </td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết Bắt Đầu : </td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Số Tiết : </td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Giảng Viên : </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lớp : </td>
+                                    <td>K24-IT10</td>
+                                </tr>
+                            </table>
+                        </div></td>
+                    <td class="green b" rowspan="3">	
+                        Nhập môn Công nghệ phần mềm
+                        Phòng: CS3.A.12.05
+                        <div class="tb-hidden box-8">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Pháp Luật Đại Cương</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã Môn Học : </td>
+                                    <td>DLP00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Tên Môn Học : </td>
+                                    <td>Pháp Luật Đại Cương</td>
+                                </tr>
+                                <tr>
+                                    <td>Phòng Học : </td>
+                                    <td>C301</td>
+                                </tr>
+                                <tr>
+                                    <td>Thứ : </td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết Bắt Đầu : </td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Số Tiết : </td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Giảng Viên : </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lớp : </td>
+                                    <td>K24-IT10</td>
+                                </tr>
+                            </table>
+                        </div></td>
+                    <td></td>
+                    <td class="col-1">Tiết 7</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 8</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 9</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="green b" rowspan="3">	
+                        Lập trình ứng dụng Java
+                        Phòng: CS3.A.12.07
+                        <div class="tb-hidden box-9">
+                            <table>
+                                <tr>
+                                    <th colspan="2">Pháp Luật Đại Cương</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã Môn Học : </td>
+                                    <td>DLP00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Tên Môn Học : </td>
+                                    <td>Pháp Luật Đại Cương</td>
+                                </tr>
+                                <tr>
+                                    <td>Phòng Học : </td>
+                                    <td>C301</td>
+                                </tr>
+                                <tr>
+                                    <td>Thứ : </td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết Bắt Đầu : </td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Số Tiết : </td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Giảng Viên : </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Lớp : </td>
+                                    <td>K24-IT10</td>
+                                </tr>
+                            </table>
+                        </div></td>
+                    <td></td>
+                    <td class="col-1">Tiết 10</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 11</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 12</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 13</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 13</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 14</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 14</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 15</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Tiết 16</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="col-1">Tiết 16</td>
+                </tr>
+                <tr class="last-row">
+                    <td></td>
+                    <td>THỨ HAI</td>
+                    <td>THỨ BA</td>
+                    <td>THỨ TƯ</td>
+                    <td>THỨ NĂM</td>
+                    <td>THỨ SÁU</td>
+                    <td>THỨ BẢY</td>
+                    <td>CHỦ NHẬT</td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="btn-move">
+                <button>Tuần Đầu</button>
+                <button>Tuần Trước</button>
+                <button>Tuần Kế</button>
+                <button>Tuần Cuối</button>
+            </div>
+        </div>
+     </div>
+    
+     <div class="footer">
+        <ul>
+            <li> Copyright ©2009 Trường Đại Học Văn Lang TP.HCM. Quản lý bởi Phòng Đào Tạo <a href="../Home.html"><img src="../images/icon-home-footer.png" alt="icon-home-footer">Trang Chủ</a></li>
+            <li>Thiết kế bởi cty Phần mềm Anh Quân <a href="#top"><img src="../images/arrow-top.gif" alt="icon-home-footer"> Đầu Trang </a></li>
+        </ul>
+    </div>
+</body>
+</html>

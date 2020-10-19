@@ -1,0 +1,361 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: relative;
+    margin-top: -20px;
+    left: 130px;
+    bottom: 0px;
+    margin-bottom: -50px;
+    margin-right: 280px;
+    box-shadow: gray 4px 4px 32px;
+    border-style: none;
+    height: 2000px;
+}
+
+.hd-home{
+    position: relative;
+    background-image: url(../images/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 130px;
+    
+}
+.bot-hd{
+    position: absolute;
+    bottom: 5px;
+    right: 140px;
+    margin: 0px;
+}
+.font{
+    position: absolute;
+    right: 1px;
+    bottom: 5px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+.a-login{
+    color: red;
+}
+
+.container{
+    border: gray solid 1px;
+    margin: 2px;
+    height: 85%;
+}
+    /*nav-bar menu*/
+
+.nav-home{
+    top: 5px;
+    border:gray solid 1px;
+    border-top: rgba(248, 64, 32, 0.7) solid 8px;
+    border-top-left-radius: 10px;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(216, 210, 210),white);
+    color: black;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+    font-size: small;
+}
+.nav-home ul{
+    list-style-type: none;
+}
+.nav-home li{
+    float: left;
+    margin: 5px 20px 5px 10px;
+}
+.nav-home li a:hover{
+    color: rgb(173, 111, 111);
+
+}
+.nav-home li a{
+    color: black;
+}
+
+
+    /* nav login*/
+
+.table-nav-login{
+    background-image: url(../images/bg-log-lef.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 99% 35px;
+    width: 100%;
+    height: 30px;
+    border-collapse: collapse;
+    border-style: none;
+    margin:0px 3px 0px 3px;
+    
+}
+.span1-nav-login{
+    color: blue;
+    padding-left: 50px;
+}
+.table-nav-login input{
+    border-style: none;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    height: 70%;
+    border: black solid 1px;
+    border-radius: 3px;
+}
+.col-1-nav-login{
+    width: 40%;
+}
+
+.table-nav-login button{
+    float: left;
+    
+}
+
+    /*section-thongbao*/
+.section-thongbao{
+    position: relative;
+    top: 10px;
+    width: 99%;
+    height: 800px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border:1px gray solid;
+}
+
+.section-thongbao h4,.huongdan h3,.support h3,.roomedu h3,.link h3,.center h3{
+    background-image: url(../images/bg-thongbaochung.png);
+    background-position: center;
+    background-repeat: repeat;
+    height: 20px;
+    margin-top: 1px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+}
+.section-thongbao p{
+    text-align: center;
+    font-size: 18px;
+}
+.section-thongbao li {
+    font-size: 22px;
+}
+.section-thongbao li a{
+    padding-left: 10px;
+    font-size: 11px;
+    color: black;
+}
+.section-thongbao .date{
+    text-align: left;
+    font-size: 11px;
+    color: gray;
+    margin-left: 3px;
+}
+.section-thongbao .more,a{
+    text-align: right;
+    font-size: 11px;
+    color: black;
+    margin-right: 3px;
+}
+
+    /*section-thongbao-cu*/
+.hd-thongbaocu{
+    border: gray 1px ;
+    border-style: none none dotted none;
+    height: 20px;
+    width: 97%;
+    margin-left: 10px;
+}
+.hd-thongbaocu img{
+    width: 15px;
+}
+.hd-thongbaocu p{
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;
+    padding-left: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.section-thongbao-cu-1 a{
+    font-size: 20px;
+    color: blue;
+}
+.red-color{
+    color: red;
+}
+.hd-thongbaocu h3{
+    text-align: center;
+}
+.date.padding{
+    padding-top: 20px;
+}
+.hd-thongbaocu li{
+    margin: 10px;
+}
+
+    /*section-huong-dan*/
+
+ .section-thongbao.huongdan{
+     margin-top: 3px;
+ }
+ .brown-color{
+     color: brown;
+ }
+ .section-thongbao.huongdan{
+     height: auto;
+ }
+
+    /*section-4-collom*/
+
+
+.section-thongbao.support h3,.center h3,.roomedu h3,.link h3{
+    font-size: 11px;
+}
+.section-thongbao.support{
+    margin-left: 10px;
+    border-style: none;
+    float: left;
+    width: 15%;
+    margin-right: 50px;
+    margin-top: 10px;
+    height: auto;
+}
+.section-thongbao.center{
+    float: left;
+    width: 25%;
+    margin-right: 50px;
+    margin-top: 10px;
+    height: auto;
+}
+.section-thongbao.roomedu{
+    float: left;
+    width: 25%;
+    margin-right: 50px;
+    margin-top: 10px;
+    height: auto;
+}
+.section-thongbao.link{
+    margin-right: 0px;
+    float: left;
+    width: 15%;
+    margin-right: 0px;
+    margin-top: 10px;
+    height: auto;
+}
+
+.section-thongbao.support ul{
+    border-style: solid;
+    height: 24px;
+    border: black solid 1px;
+    padding-inline-start: 2px;
+}
+.section-thongbao.support li{
+    list-style-type: none;
+    
+    display: inline-block;
+    font-size: 19px;
+    margin: 1px;
+    background-color: black;
+    color: white;
+    float: left;
+    padding: 0px 2px;
+    
+}
+.section-thongbao.support p{
+    font-size: 13px;
+}
+.section-thongbao.link ul{
+    list-style-type: none;
+    text-align: center;
+    padding-inline-start: 1px;
+}
+.section-thongbao.link li{
+    border: black solid 1px;
+    margin: 2px;
+}
+.section-thongbao.link li:last-child{
+    margin-bottom: 0px;
+}
+
+    /*footer*/
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+    right: 2px;
+    left: 0px;
+    width: 100%;
+    opacity: 50%;
+    color: brown;
+}
+.footer ul{
+    width: 100%;
+    padding-inline-start: 0px;
+    
+    
+}
+.footer li{
+    background-image: linear-gradient(gray,white);
+    margin:3px 0px;
+    width: 100%;
+    list-style-position: inside;
+    margin-right: 30px;
+}
+.footer a{
+    position: absolute;
+    right: 2px;
+}
+
+    /*Page-Profile*/
+
+.drop-down{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+.drop-down-btn{
+    border: none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.drop-down-content{
+    display: none;
+    opacity: 0;
+    border: none;
+    text-align: left;
+    position: absolute;
+    min-width: 150px;
+    background-image: linear-gradient(white,gray);
+    box-shadow: gray 4px 4px 16px;
+    color: white;
+    z-index: 1;
+}
+.drop-down-content a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.drop-down:hover .drop-down-content,.drop-down-content a{
+    display: block;
+    animation-name: drop;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes drop{
+    0%{opacity: 0.6;background-image: linear-gradient(white,blue);border-radius: 1px;color: tomato;text-align: left;}
+    25%{opacity: 0.7;background-image: linear-gradient(white,yellow);border-radius: 15px;color: violet;text-align: center;}
+    50%{opacity: 0.8;background-image: linear-gradient(white,red);border-radius: 25px;color: turquoise;text-align: right;}
+    75%{opacity: 0.9;background-image: linear-gradient(white,pink);border-radius: 35px;color: sienna;text-align: justify;}
+    100%{opacity: 1;background-image: linear-gradient(white,green);border-radius: 45px;color: silver;text-align: center;}
+}
